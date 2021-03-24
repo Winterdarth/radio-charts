@@ -28,7 +28,7 @@ public class RadioCharts {
         String query = "SELECT artist, song " +
                 "FROM music_broadcast " +
                 "GROUP BY artist " +
-                "ORDER BY COUNT(song) DESC";
+                "ORDER BY COUNT(song) ASC";
 
         return getResult(query, "artist");
     }
